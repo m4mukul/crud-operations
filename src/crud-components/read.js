@@ -11,9 +11,9 @@ function Read(){
     }, [])
 
     const setData = (data) => {
-        let {id, firstName, lastName, checkbox } = data;
+        let {id, username, lastName, checkbox } = data;
         localStorage.setItem('ID', id);
-        localStorage.setItem('First Name', firstName);
+        localStorage.setItem('First Name', username);
         localStorage.setItem('Last Name', lastName);
         localStorage.setItem('Checkbox Value', checkbox)
      }
