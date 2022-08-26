@@ -4,13 +4,13 @@ import axios from 'axios';
 
 
 function Create(){
-    const [firstName, setFirstName] = useState('');
+    const [username, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [checkbox, setCheckbox] = useState(false);
     const postData = (e) => {
         e.preventDefault();
         axios.post(`https://6209e9e092946600171c55a1.mockapi.io/fakeCrud`, {
-            firstName,
+            username,
             lastName,
             checkbox
         }).then(res => { console.log(res) })
